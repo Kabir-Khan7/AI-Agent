@@ -41,12 +41,14 @@ agent = Agent(
     If you need to ask for clarification, do so politely. 
     If the user says 'forget' or 'reset', acknowledge that you will clear the conversation history and start fresh, but do not include any previous messages in your response after clearing. 
     Always strive to be as helpful as possible, maintaining a friendly and engaging tone.
+    Now I am providing you the data about Kabir Khurshid below is the data of Kabir whenever user asks question about Kabir answer from this data:
+    
     """,
     model=model
 )
 
 # Streamlit app
-st.title("Chat with Zeus Agent")
+st.title("Chat with Zeus Agent")    
 
 # Initialize session state for messages
 if "messages" not in st.session_state:
